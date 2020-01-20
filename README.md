@@ -49,12 +49,6 @@ abbe01ccdc06df6f501a27235319c966188ddc42163eb485d0c589e73f9b7c30
 * exec to generated container
 
 ```
-docker exec -it abbe01ccdc06 /bin/bash
-```
-
-* run python train.py
-
-```
-nohup python train.py --job_name=learner &
-nohup python train.py --job_name=actor &
+docker exec -it 7c964577cb3d python train.py --job_name=learner
+docker exec -it 7c964577cb3d python train.py --job_name=actor
 ```
